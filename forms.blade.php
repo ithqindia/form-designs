@@ -46,7 +46,7 @@
                 </label>
             </div>
             <div class="form-check mt-2">
-                <input class="form-check-input rbtn" type="radio" name="radio_button" id="new_address" value="usenew"
+                <input class="form-check-input rbtn" type="radio" name="radio_button" id="new_address" value="Use new Address"
                     checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                     Use new address
