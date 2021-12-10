@@ -25,20 +25,20 @@
           <input type="number" class="form-control" name="phone" id="phone">
         </div>
         <div class="col-12">
-          <label for="whatsappid" class="form-label">Whatsapp No</label>
-          <input type="" class="form-control" name="whatsapp" id="whatsappid" required>
+          <label for="whatsappid" class="form-label">Whatsapp Number</label>
+          <input type="text" class="form-control" name="whatsapp_number" id="whatsappid" required>
         </div>
         <div class="col-12">
          <label for="skypeid" class="form-label">Skype ID</label>
-         <input type="text" class="form-control" name="skype" id="skypeid">
+         <input type="text" class="form-control" name="skype_id" id="skypeid">
         </div>
         <div class="col-12">
          <label for="zoomid" class="form-label">Zoom ID</label>
-         <input type="text" class="form-control" name="zoom" id="zoomid">
+         <input type="text" class="form-control" name="zoom_id" id="zoomid">
         </div>
         <div class="col-12">
          <label for="other" class="form-label">Other</label>
-         <input type="text" class="form-control" name="other" id="other">
+         <input type="text" class="form-control" name="other_id" id="other">
         </div>
 
         <div class="col-12 mt-3">
