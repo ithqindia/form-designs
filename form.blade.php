@@ -7,54 +7,54 @@
         <form class="row g-3">
             <div class="col-md-6">
                 <label for="inputDate" class="form-label">Date</label>
-                <input type="date" class="form-control" name="date" id="inputDate">
+                <input type="date" class="form-control" name="session_date" id="inputDate">
             </div>
             <div class="col-md-6">
                 <label for="inputTime" class="form-label">Time</label>
-                <input type="time" class="form-control" name="time" id="inputTime">
+                <input type="time" class="form-control" name="session_time" id="inputTime">
             </div>
             <fieldset class="row mb-3">
                 <legend class="col-form-label col-sm-2 pt-0">Session Type</legend>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="online"
+                        <input class="form-check-input" type="radio" name="meeting_name" id="input_Radio" value="online"
                             checked>
-                        <label class="form-check-label" for="gridRadios1">
+                        <label class="form-check-label" for="input_Radio">
                             Online
                         </label>
                     </div>
-                    <div id="hide">
+                    <div id="online_Radio">
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="gridRadio" id="gridRadios2" value="zoom">
+                            <input class="form-check-input" type="radio" name="zoom_name" id="gridRadios2" value="zoom">
                             <label class="form-check-label" for="gridRadios3">
                                 Zoom
                             </label>
-                            <input type="text" class="form-control" name="gridRadio" id="inputtext">
+                            <input type="text" class="form-control" name="zoom_name" id="inputtext">
                         </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="gridRadio" id="gridRadios3" value="skype">
+                            <input class="form-check-input" type="radio" name="skype_name" id="gridRadios3" value="skype">
                             <label class="form-check-label" for="gridRadios3">
                                 Skype
                             </label>
-                            <input type="text" class="form-control" name="gridRadio" id="inputtext1">
+                            <input type="text" class="form-control" name="skype_name" id="inputtext1">
                         </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="gridRadio" id="gridRadios4" value="whatsapp">
+                            <input class="form-check-input" type="radio" name="whatsapp_name" id="gridRadios4" value="whatsapp">
                             <label class="form-check-label" for="gridRadios3">
                                 WhatsApp
                             </label>
-                            <input type="text" class="form-control" name="gridRadio" id="inputtext2">
+                            <input type="text" class="form-control" name="whatsapp_name" id="inputtext2">
                         </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="gridRadio" id="gridRadios5" value="other">
+                            <input class="form-check-input" type="radio" name="other_name" id="gridRadios5" value="other">
                             <label class="form-check-label" for="gridRadios3">
                                 Other
                             </label>
-                            <input type="text" class="form-control" name="gridRadio" id="inputtext3">
+                            <input type="text" class="form-control" name="other_name" id="inputtext3">
                         </div>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="offline">
+                        <input class="form-check-input" type="radio" name="meeting_name" id="gridRadios6" value="offline">
                         <label class="form-check-label" for="gridRadios2">
                             Offline
                         </label>
@@ -78,11 +78,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         //  $('#hide').hide();
-        $("[name='gridRadios']").click(function(event) {
-            if ($('#gridRadios1').is(":checked")) {
-                $('#hide').show();
+        $("[name='meeting_name']").click(function(event) {
+            if ($('#input_Radio').is(":checked")) {
+                $('#online_Radio').show();
             } else {
-                $('#hide').hide();
+                $('#online_Radio').hide();
             }
         });
     </script>
